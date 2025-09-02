@@ -256,7 +256,7 @@ button {
 .main-title {
   margin: 0;
   font-size: 12px;
-  color: gray;
+  color: rgb(150, 150, 150);
 }
 
 .sub-title {
