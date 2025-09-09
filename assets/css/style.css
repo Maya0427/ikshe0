@@ -527,6 +527,7 @@ button {
   position: relative;  
   width: 100px;
   height: 500px;
+  text-align: center;
 }
 
 .window-buttons {
