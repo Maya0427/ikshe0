@@ -571,3 +571,8 @@ button {
   font-size: 24px;
   color: #000000;
 }
+
+.size-800px {
+  width: 800px;
+  height: auto;
+}
