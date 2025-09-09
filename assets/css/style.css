@@ -547,7 +547,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   border-radius: 3px;
-  font-size: 8px
+  font-size: 3px
 }
 
 .window-buttons button.minimize {
