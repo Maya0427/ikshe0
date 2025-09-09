@@ -514,7 +514,7 @@ button {
 /*# sourceMappingURL=style.css.map */
 
 .gameFile {
-  width: 200px;
+  width: 20%;
   display: block;
   margin: 0 auto;
 }
@@ -525,8 +525,8 @@ button {
 }
 .window {
   position: relative;  
-  width: 1000px;
-  height: 500px;
+  width: 80%;
+  height: 60%;
   text-align: center;
 }
 
@@ -539,8 +539,8 @@ button {
 }
 
 .window-buttons button {
-  width: 40px;
-  height: 30px;
+  width: 5%;
+  height: 3%;
   border: none;
   background-color: #ddd;
   color: black;
