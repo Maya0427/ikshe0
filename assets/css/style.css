@@ -530,8 +530,8 @@ button {
 }
 .window {
   position: relative;  
-  width: 1500px;
-  height: 750px;
+  width: 1px;
+  height: 500px;
   display: block;
   margin: 0 auto;
 }
