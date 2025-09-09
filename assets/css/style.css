@@ -257,6 +257,7 @@ button {
   margin: 0;
   font-size: 40px;
   color: rgb(150, 150, 150);
+  height: 100px
 }
 
 .sub-title {
