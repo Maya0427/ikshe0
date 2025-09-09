@@ -524,7 +524,9 @@ button {
   height: auto;
 }
 .window {
-  position: relative;       /* 子を絶対配置するため */
+  position: relative;  
+  width: 500px;
+  height: 300px;
 }
 
 .window-buttons {
