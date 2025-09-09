@@ -532,7 +532,7 @@ button {
 }
 .window {
   position: relative;  
-  width: 1px;
+  width: 1000px;
   height: 500px;
   display: block;
   margin: 0 auto;
