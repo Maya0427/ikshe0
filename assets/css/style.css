@@ -536,8 +536,8 @@ button {
 }
 
 .window-buttons button {
-  width: 24px;
-  height: 24px;
+  width: 10px;
+  height: 7px;
   border: none;
   background-color: #ddd;
   color: black;
