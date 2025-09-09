@@ -523,12 +523,15 @@ button {
 .gameFileBox {
   width: 200px;
   height: 200px;
+  display: block;
+  margin: 0 auto;
 }
 .window {
   position: relative;  
   width: 1500px;
   height: 750px;
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .window-buttons {
@@ -575,4 +578,5 @@ button {
 .size-800px {
   width: 800px;
   height: auto;
+  height
 }
