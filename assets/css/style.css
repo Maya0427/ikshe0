@@ -516,3 +516,8 @@ button {
 .gameFile {
   width: 50px;
 }
+
+.gameFileBox {
+  width: 100%;
+  height: aout;
+}
