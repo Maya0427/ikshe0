@@ -272,6 +272,7 @@ button {
 }
 
 .section-title {
+  width: 800px;
   font-size: 24px;
   line-height: 1.75;
   text-align: center;
