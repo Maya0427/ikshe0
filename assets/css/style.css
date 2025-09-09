@@ -523,3 +523,47 @@ button {
   width: 100%;
   height: auto;
 }
+.window {
+  position: relative;       /* 子を絶対配置するため */
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.window-buttons {
+  position: absolute;       /* 親の右上に固定 */
+  top: 5px;
+  right: 5px;
+  display: flex;
+  gap: 5px;                 /* ボタン間のスペース */
+}
+
+.window-buttons button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.window-buttons button.minimize {
+  background-color: #f4e04d;  /* 色変更可能 */
+}
+
+.window-buttons button.maximize {
+  background-color: #4dd2f4;
+}
+
+.window-buttons button.close {
+  background-color: #f44d4d;
+}
+
+.window-buttons button:hover {
+  filter: brightness(85%);
+}
