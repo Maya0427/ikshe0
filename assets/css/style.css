@@ -522,12 +522,12 @@ button {
 
 .gameFileBox {
   width: 200px;
-  height: auto;
+  height: 200px;
 }
 .window {
   position: relative;  
-  width: 1000px;
-  height: 500px;
+  width: 1500px;
+  height: 750px;
   text-align: center;
 }
 
@@ -540,8 +540,8 @@ button {
 }
 
 .window-buttons button {
-  width: 30px;
-  height: 20px;
+  width: 70px;
+  height: 30px;
   border: none;
   background-color: #ddd;
   color: black;
