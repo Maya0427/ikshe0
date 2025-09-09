@@ -564,3 +564,8 @@ button {
 .window-buttons button:hover {
   filter: brightness(85%);
 }
+
+.story-font {
+  font-size: 16px;
+  color: #FFFFFF;
+}
