@@ -547,15 +547,15 @@ button {
 }
 
 .window-buttons button.minimize {
-  background-color: #f4e04d;
+  background-color: #E0E0E0;
 }
 
 .window-buttons button.maximize {
-  background-color: #4dd2f4;
+  background-color: #E0E0E0;
 }
 
 .window-buttons button.close {
-  background-color: #f44d4d;
+  background-color: #FF0000;
 }
 
 .window-buttons button:hover {
