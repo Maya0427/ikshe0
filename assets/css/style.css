@@ -279,6 +279,8 @@ button {
   padding: 9px 20px;
   background-color: #d9e021;
   margin: 0 -20px 20px -20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .section-title__stage {
