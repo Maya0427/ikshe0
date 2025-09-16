@@ -591,3 +591,8 @@ button {
   display: block;
   margin: 0 auto;
 }
+
+answer-input {
+  display: block;
+  width: 300px;
+}
