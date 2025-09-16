@@ -92,12 +92,7 @@ Password:◻︎△</h2>
         <!-- STAGE2クリア画面　ここから -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
-            <div class="clear-message">
-              <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">＊＊＊＊＊＊＊＊＊<br>
-                ＊＊＊＊＊＊＊＊＊</div>
-                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
-            </div>
+            <a class="btn" href="main2.html">タンスを開ける。<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></a>
           </div>
         </section>
         <!-- STAGE2クリア画面　ここまで -->
