@@ -68,13 +68,13 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１ 部屋から出るための扉には鍵がかかっている！<br>
-        　　　　　　　　　　　　　　　　　　　　　　　　　　　　             　 鍵には3つにアルファベットが入るみたいだ<br>
-              　　　　　　　　　　　　　　　　　　　　　　　　　            　部屋の中から当てはまる３つのアルファベットを見つけ出せ<br>　</div>
+              <div class="clear-message__title">STAGE：１ </div>
               <div class="clear-message__content"><br>
                <br>
                 </div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <div class="container">
+                <a class="btn" href="main2.html">ドアの奥へ進む。<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></a>
+              </div>
             </div>
           </div>
         </section>
@@ -93,3 +93,4 @@ Youtube貼り付けここまで -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
