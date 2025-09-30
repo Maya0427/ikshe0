@@ -62,12 +62,21 @@
       </section>
 
       <!-- STAGE2クリア画面 -->
-      <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}" class="section section--clear bg-color--gray">
+      <section 
+        v-if="clear['stage2']" 
+        v-bind:class="{isClear:clear['stage2']}"  
+        class="section section--clear bg-color--gray">
         <div class="container">
-          <a class="btn" href="main3.html">
-            タンスを開ける。
-            <svg class="btn__arrow"><use xlink:href="#arrow"></use></svg>
-          </a>
+          <div class="clear-message">
+            <div class="clear-message__title">STAGE：2</div>
+            <div class="clear-message__content"><br>パスワードを見つけて、タンスのロックを解除した！<br></div>
+            <div class="container">
+              <a class="btn" href="main3.html">
+                タンスを開ける。
+                <svg class="btn__arrow"><use xlink:href="#arrow"></use></svg>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
