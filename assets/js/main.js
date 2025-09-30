@@ -25,48 +25,28 @@ const app = Vue.createApp({
       },
     }
   },
-  created() {
-    // ページを開いたときに localStorage から復元
-    const saved = localStorage.getItem("gameState");
-    if (saved) {
-      const state = JSON.parse(saved);
-      this.answer = state.answer;
-      this.clear = state.clear;
-      this.next = state.next;
+  mounted() {
+    // ページ読み込み時に localStorage をリセットして初期状態にする
+    localStorage.removeItem("gameState");
+
+    // answer / clear / next を再初期化
+    for (let stage in this.answer) {
+      this.answer[stage] = this.answer[stage].map(() => false);
     }
-  },
-  watch: {
-    // データが変わるたびに保存
-    answer: {
-      handler() { this.saveState(); },
-      deep: true
-    },
-    clear: {
-      handler() { this.saveState(); },
-      deep: true
-    },
-    next: {
-      handler() { this.saveState(); },
-      deep: true
+    for (let stage in this.clear) {
+      this.clear[stage] = false;
+    }
+    for (let stage in this.next) {
+      this.next[stage] = false;
     }
   },
   methods: {
-    saveState() {
-      const state = {
-        answer: this.answer,
-        clear: this.clear,
-        next: this.next,
-      };
-      localStorage.setItem("gameState", JSON.stringify(state));
-    },
     answerInput(event, stage, number, final) {
       this.answer[stage][number-1] = event;
-
       const result = this.answer[stage].every((element) => element);
       this.clear[stage] = result;
 
       if (this.clear[stage] === true && final === 'final') {
-        // 最終ステージは final.html に飛ぶ
         window.location.href = 'final.html';
       }
     },
@@ -80,7 +60,7 @@ const app = Vue.createApp({
 /* 解答入力欄のコンポーネント */
 app.component('answer-input', {
   props: ['correct'],
-  data: function () {
+  data() {
     return {
       okMessage: '正解！',
       ngMessage: 'そのキーワードは違うようだぞ！？',
@@ -110,7 +90,4 @@ app.component('answer-input', {
   }
 })
 
-app.mount('#stage')
-
-
-
+app.mount('#stage');
