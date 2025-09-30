@@ -129,7 +129,7 @@ button {
 }
 
 .container.answer-btn {
-  widht:1000px
+  widht: 1000px;
   display: block;
   margin: 0 auto;
 }
