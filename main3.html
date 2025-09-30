@@ -47,15 +47,21 @@
       </section>
 
       <!-- STAGE3クリア画面 -->
-      <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}" class="section section--clear bg-color--gray">
+      <section 
+        v-if="clear['stage3']" 
+        v-bind:class="{isClear:clear['stage3']}"  
+        class="section section--clear bg-color--gray">
         <div class="container">
-          <p>
-            パスワード入力成功！
-          </p>
-          <a class="btn" href="final.html">
-            パソコンを開く。
-            <svg class="btn__arrow"><use xlink:href="#arrow"></use></svg>
-          </a>
+          <div class="clear-message">
+            <div class="clear-message__title">STAGE：3 CLEAR!</div>
+            <div class="clear-message__content"><br>パスワードを見つけて、パソコンのロックを解除した！<br></div>
+            <div class="container">
+              <a class="btn" href="main3.html">
+                パソコンを開く。
+                <svg class="btn__arrow"><use xlink:href="#arrow"></use></svg>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
